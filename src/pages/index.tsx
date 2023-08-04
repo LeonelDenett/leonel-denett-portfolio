@@ -37,7 +37,7 @@ export default function Home() {
             <Box className={styles.container} id="Home">
                 {/* Presentation */}
                 <Box className={styles.presentation}>
-                    <Typography color="primary" className={styles.presentationText}>Welcome, i'm</Typography>
+                    <Typography color="primary" className={styles.presentationText}>Welcome, i&apos;m</Typography>
                     <Typography component="h1" variant="h1" className={styles.name}>Leonel Denett</Typography>
                     <Typography component="h2" color="primary" className={styles.presentationText}>Full stack Developer</Typography>
                 </Box>

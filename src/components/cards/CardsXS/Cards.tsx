@@ -37,37 +37,37 @@ function Cards({project, openModal}: CardProps) {
     const theme = useTheme();
     const isPhone = useMediaQuery(theme.breakpoints.between('xs', 'md'));
     return (
-        <Box>
-                <Box className={styles.cardContainer}>
-                    <Card elevation={4} className={styles.card} id={project.id} key={project.id}>
-                        <CardActionArea sx={{borderRadius:"1rem"}}>
-                            <CardMedia className={styles.cardMedia}>
-                                <Box className={styles.photoContainer}>
-                                    <Image src={project.imgCard} alt={project.altCard} className={styles.photo} />
-                                </Box>
-                            </CardMedia>
-                            <CardContent>
-                                <Box>
-                                    <Typography color="primary" variant="body1" fontSize={"2rem"}>{project.title}</Typography>
-                                    <Typography color="primary" variant='body1' sx={{marginTop:".5rem"}}>{project.description}</Typography>
-                                    <Button variant="contained" className={`${styles.buttons} ${styles.buttonSeeMore}`} onClick={() => openModal(project)}>
-                                        See more
-                                    </Button>
-                                </Box>
-                                <Box className={styles.cardButtons}>
-                                    <Button className={styles.buttons} variant="contained">
-                                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
-                                    </Button>
-                                    <Button className={styles.buttons} variant="contained">
-                                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.github}>
-                                            <GitHubIcon/>
-                                        </Link>
-                                    </Button>
-                                </Box>
-                            </CardContent>
-                        </CardActionArea>
-                    </Card>
-                </Box>
+        <Box key={project.id}>
+            <Box className={styles.cardContainer}>
+                <Card elevation={4} className={styles.card}>
+                    <CardActionArea sx={{borderRadius:"1rem"}}>
+                        <CardMedia className={styles.cardMedia}>
+                            <Box className={styles.photoContainer}>
+                                <Image src={project.imgCard} alt={project.altCard} className={styles.photo} />
+                            </Box>
+                        </CardMedia>
+                        <CardContent>
+                            <Box>
+                                <Typography color="primary" variant="body1" fontSize={"2rem"}>{project.title}</Typography>
+                                <Typography color="primary" variant='body1' sx={{marginTop:".5rem"}}>{project.description}</Typography>
+                                <Button variant="contained" className={`${styles.buttons} ${styles.buttonSeeMore}`} onClick={() => openModal(project)}>
+                                    See more
+                                </Button>
+                            </Box>
+                            <Box className={styles.cardButtons}>
+                                <Button className={styles.buttons} variant="contained">
+                                    <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
+                                </Button>
+                                <Button className={styles.buttons} variant="contained">
+                                    <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.github}>
+                                        <GitHubIcon/>
+                                    </Link>
+                                </Button>
+                            </Box>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Box>
         </Box>
     );
 }

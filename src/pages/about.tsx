@@ -83,7 +83,7 @@ function About() {
                     <Box className={styles.presentation} component={Paper} elevation={5}>
                         <Typography className={styles.presentationText} color="primary">
                             My name is <Typography variant="caption" className={styles.name}>Leonel Denett.</Typography><br/>
-                            I'm a full stack developer from Argentine based in France.<br/><br/>
+                            I&apos;m a full stack developer from Argentine based in France.<br/><br/>
                             I usually work with React, NextJs and Firebase.
                         </Typography>
                     </Box>
