@@ -1,0 +1,8 @@
+.button {
+    height: 3.75rem;
+    width: 9rem;
+    background: linear-gradient(to left, #F66B0E,#FB8B35);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    border: solid 0.125rem #eeeeee;
+}

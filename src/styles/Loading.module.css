@@ -1,0 +1,24 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    background: #112B3C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    gap: 1rem;
+}
+.iconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eeeeee;
+}
+.icon {
+    width: 3rem;
+    height: 3rem;
+}

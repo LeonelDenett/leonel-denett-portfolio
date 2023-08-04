@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  min-width: 216px;
+  min-height: 216px;
+  z-index: 2;
+  position: relative;
+}
+.profileContainer {
+  max-width: 216px;
+  max-height: 216px;
+}
+.photo {
+  width: 216px;
+  height: 100%;
+}

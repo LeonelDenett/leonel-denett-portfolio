@@ -1,0 +1,107 @@
+.cardContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    text-align: center;
+}
+.card {
+    border-radius: 1rem;
+    background-color: #0b1c27;
+    border: solid 2px #eeeeee;
+    position: relative;
+    overflow: visible;
+    max-height: 35.125rem;
+    width: 100%;
+    max-width: 30rem;
+}
+.cardMedia {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    border-radius: .85rem;
+}
+.photoContainer {
+    flex-grow: 1;
+    overflow: hidden;
+    background-color: #eeeeee;
+}
+.photo {
+    height: 100%;
+    max-height: 280px;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 0 0 .85rem .85rem;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+}
+.cardTitle {
+    background-color: #eeeeee;
+    border-radius: 1rem;
+}
+.cardIcons {
+    display: flex;
+    flex-direction: column;
+}
+.iconNext {
+    fill: #eeeeee;
+    height: 5rem;
+    width: 5rem;
+}
+.iconMui {
+    color: #eeeeee;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.cardButtons {
+    position: absolute;
+    top: 10%;
+    right: -1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons {
+    min-width: 7rem;
+    background: linear-gradient(to top, #F66B0E,#FB8B35);
+    color: #eeeeee;
+    border: solid 2px #eeeeee;
+    border-radius: .5rem;
+    z-index: 2;
+}
+.buttonSeeMore {
+    margin-top: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .cardContainer {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        width: 100%;
+        background-color: red;
+    }
+    .card {
+        border-radius: 1rem;
+        background-color: #0b1c27;
+        border: solid 2px #eeeeee;
+        position: relative;
+        overflow: visible;
+        max-height: 35.125rem;
+        width: 100%;
+        max-width: 35rem;
+    }
+}

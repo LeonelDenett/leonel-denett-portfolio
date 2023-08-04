@@ -1,0 +1,20 @@
+.menu {
+    height: 3rem;
+    width: 3rem;
+    margin-right: -10px;
+}
+.drawer {
+    display: flex;
+    height: 104px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary);
+}
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    height: 104px;
+    z-index: 55;
+}
