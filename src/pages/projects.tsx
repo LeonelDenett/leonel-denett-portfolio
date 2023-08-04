@@ -61,7 +61,7 @@ function Projects() {
                 <Box sx={{position:"relative", width:"100%", marginLeft: {lg:"5rem", xl:"14.75rem"}, marginRight:{lg:"1.5rem", xl:"17.5rem"}}}>
                     <Grid container spacing={3}>
                         {projectData.map((project) => (
-                            <Grid item md={project.md} lg={project.lg}>
+                            <Grid item md={project.md} lg={project.lg} key={project.id}>
                                 <CardsXl project={project} openModal={openModal}/>
                             </Grid>
                         ))}
