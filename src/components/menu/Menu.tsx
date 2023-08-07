@@ -17,14 +17,16 @@ function Menu() {
     }
 
     return (
-        <Box className={styles.menu} component={Paper} elevation={5}>
-            {MenuData.map((item) => (
-                <Box key={item.id} className={styles.menuContainer} onClick={() => smoothScroll(item.title)}>
-                    <Chip label={item.title} className={styles.menuItem} />
-                    <Divider color="primary" className={styles.divider} />
-                </Box>
-            ))}
-        </Box>
+        <Paper sx={{borderRadius:"1rem"}} elevation={5}>
+            <Box className={styles.menu}>
+                {MenuData.map((item) => (
+                    <Box key={item.id} className={styles.menuContainer} onClick={() => smoothScroll(item.title)}>
+                        <Chip label={item.title} className={styles.menuItem} />
+                        <Divider color="primary" className={styles.divider} />
+                    </Box>
+                ))}
+            </Box>
+        </Paper>
     );
 }
 

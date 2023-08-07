@@ -14,8 +14,8 @@ import { socialIcons } from "@/utils/data/socialIcons";
 
 export default function SocialIcons() {
     return (
-        <Box className={styles.container}>
-            <Paper className={styles.iconsContainer} elevation={3} sx={{borderRadius:"1rem"}}>
+        <Paper className={styles.container} elevation={3} sx={{borderRadius:"1rem"}}>
+            <Box className={styles.iconsContainer}>
                 {socialIcons.map((icon) => (
                     <Link key={icon.id} href={icon.link} target="_blank">
                         <IconButton
@@ -27,7 +27,7 @@ export default function SocialIcons() {
                         </IconButton>
                     </Link>
                 ))}
-            </Paper>
-        </Box>
+            </Box>
+        </Paper>
     )
 }
