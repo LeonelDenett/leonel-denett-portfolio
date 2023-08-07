@@ -19,7 +19,7 @@
 .menuItem {
     display: flex;
     align-items: center;
-    padding: .5rem;
+    padding: 1.25rem;
     border-radius: .5rem 0 0 .5rem;
     border-radius: .5rem;
     background-color: #112B3C;

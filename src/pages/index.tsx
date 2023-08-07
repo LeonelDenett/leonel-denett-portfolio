@@ -50,16 +50,18 @@ export default function Home() {
                 </Box>
                 {/* Description */}
                 <Box className={styles.description}>
-                    <Paper className={styles.descriptionContainer} sx={{borderRadius: "1rem"}} elevation={5}>
+                <Paper sx={{borderRadius:"1rem"}} elevation={5}>
+                    <Box className={styles.descriptionContainer} sx={{borderRadius: "1rem"}} >
                         <Typography color="primary" className={styles.descriptionText}>
                         Fusing full-stack development with UI/UX design, I create responsive apps with intuitive interfaces and captivating experiences.
                         </Typography>
-                        <Box component={motion.div} whileHover={{scale: 1.05}} className={styles.descriptionButtonContainer}>
-                            <Paper onClick={() => smoothScroll("Contact")}  elevation={5} sx={{borderRadius: "1rem"}}>
+                        <Box className={styles.descriptionButtonContainer} component={motion.div} whileHover={{scale: 1.05}} onClick={() => smoothScroll("Contact")}>
+                            <Paper elevation={5} sx={{borderRadius: "1rem"}}>
                                 <Button variant="contained" className={styles.descriptionButton}>Contact me</Button>
                             </Paper>
                         </Box>
-                    </Paper>
+                    </Box>
+                </Paper>
                 </Box>
             </Box>
             <Projects/>

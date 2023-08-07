@@ -1,6 +1,7 @@
 import styles from "./Menu.module.css";
 // Mui Components
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 import Chip from "@mui/material/Chip";
 import Divider from "@mui/material/Divider";
@@ -21,7 +22,7 @@ function Menu() {
             <Box className={styles.menu}>
                 {MenuData.map((item) => (
                     <Box key={item.id} className={styles.menuContainer} onClick={() => smoothScroll(item.title)}>
-                        <Chip label={item.title} className={styles.menuItem} />
+                        <Typography variant="body2" className={styles.menuItem}>{item.title}</Typography>
                         <Divider color="primary" className={styles.divider} />
                     </Box>
                 ))}
