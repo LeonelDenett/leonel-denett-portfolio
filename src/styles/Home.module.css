@@ -57,7 +57,7 @@
   height: auto;
   object-fit: cover;
   object-position: center center;
-  border: solid .3rem #eeeeee;
+  border: solid 2px #eeeeee;
   border-radius: 2rem;
 }
 .description {

@@ -2,13 +2,16 @@
   position: relative;
 }
 .iconsContainer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: -5.5rem;
-  right: -1.5rem;
+  right: -1.8rem;
   z-index: 2;
   background-color: #0b1c27;
-  gap: .5rem;
   border-radius: 1rem;
+  gap: .5rem;
+  border: solid 2px #eeeeee;
 }
 .icon {
   height: 2.5rem;
@@ -20,4 +23,14 @@
 .icon:hover {
   background: linear-gradient(to left, #F66B0E, #FB8B35);
   border-radius: .5rem;
+}
+@media (max-width: 400px) {
+  .icon {
+    height: 2rem;
+    width: 2rem;
+  }
+  .iconsContainer {
+    gap: .25rem;
+    right: -1rem;
+  }
 }

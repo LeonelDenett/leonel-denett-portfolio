@@ -1,6 +1,5 @@
 // Next
 import Link from "next/link";
-import { Fragment } from "react";
 // Styles
 import styles from "./SocialIcons.module.css";
 // Mui Components
@@ -14,8 +13,8 @@ import { socialIcons } from "@/utils/data/socialIcons";
 
 export default function SocialIcons() {
     return (
-        <Paper className={styles.container} elevation={3} sx={{borderRadius:"1rem"}}>
-            <Box className={styles.iconsContainer}>
+        <Box className={styles.container}>
+            <Paper className={styles.iconsContainer}  elevation={5} sx={{borderRadius:"1rem"}}>
                 {socialIcons.map((icon) => (
                     <Link key={icon.id} href={icon.link} target="_blank">
                         <IconButton
@@ -27,7 +26,7 @@ export default function SocialIcons() {
                         </IconButton>
                     </Link>
                 ))}
-            </Box>
-        </Paper>
+            </Paper>
+        </Box>
     )
 }

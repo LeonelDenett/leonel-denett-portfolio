@@ -57,7 +57,7 @@ export default function Home() {
                         </Typography>
                         <Box className={styles.descriptionButtonContainer} component={motion.div} whileHover={{scale: 1.05}} onClick={() => smoothScroll("Contact")}>
                             <Paper elevation={5} sx={{borderRadius: "1rem"}}>
-                                <Button variant="contained" className={styles.descriptionButton}>Contact me</Button>
+                                <Button variant="contained" color="primary" className={styles.descriptionButton}>Contact me</Button>
                             </Paper>
                         </Box>
                     </Box>

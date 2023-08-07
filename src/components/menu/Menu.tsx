@@ -18,16 +18,16 @@ function Menu() {
     }
 
     return (
-        <Paper sx={{borderRadius:"1rem"}} elevation={5}>
-            <Box className={styles.menu}>
+        <Box>
+            <Paper className={styles.menu} sx={{borderRadius:"1rem"}} elevation={5}>
                 {MenuData.map((item) => (
                     <Box key={item.id} className={styles.menuContainer} onClick={() => smoothScroll(item.title)}>
                         <Typography variant="body2" className={styles.menuItem}>{item.title}</Typography>
                         <Divider color="primary" className={styles.divider} />
                     </Box>
                 ))}
-            </Box>
-        </Paper>
+            </Paper>
+        </Box>
     );
 }
 
