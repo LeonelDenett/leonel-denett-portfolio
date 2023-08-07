@@ -1,19 +1,39 @@
 .container {
-    height: 100%;
-    min-width: 23rem;
+    min-width: 15rem;
     max-width: 30rem;
-    min-height: 44.5rem;
+    min-height: 46.1rem;
     padding: 1rem;
     background-color: #0b1c27;
     border: 2px solid #eeeeee;
     border-radius: 1rem;
     overflow: hidden;
+    display: flex;
+}
+.swiperContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    min-width: 15rem;
+    max-width: 30rem;
+    height: 100%;
+    height: 43.9rem;
+    padding: 0;
+    margin: 0;
 }
 .swiper {
     border-radius: .85rem;
     overflow: hidden;
+    height: 100%;
+    width: 100%;
+    max-height: 43.9rem;
 }
 .slides1 {
     background-color: #112B3C;
+    display: flex;
+}
+.slides2 {
+    background-color: red;
     display: flex;
 }

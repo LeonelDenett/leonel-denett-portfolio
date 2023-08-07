@@ -15,7 +15,7 @@ function Subtitle(props: MyMeasuresProps) {
     const { subtitle, id } = props;
     return (
         <Box className={styles.header} id={props.id}>
-            <Box className={styles.titleContainer} component={Paper} elevation={5}>
+            <Paper className={styles.titleContainer} sx={{borderRadius:"1rem", backgroundColor:"#0b1c27"}} elevation={5}>
                 <Typography
                     component="h2"
                     variant="h4"
@@ -24,7 +24,7 @@ function Subtitle(props: MyMeasuresProps) {
                 >
                     {props.subtitle}
                 </Typography>
-            </Box>
+            </Paper>
         </Box>
     );
 }

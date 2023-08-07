@@ -1,5 +1,5 @@
 // Styles
-import styles from '@/components/socialIcons/SocialIcons.module.css';
+import styles from '../../components/socialIcons/SocialIcons.module.css';
 // Mui Icons
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

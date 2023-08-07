@@ -30,20 +30,20 @@ export const projectData: Project[] = [
         altCard:"Photographer",
         link:"https://charles-cantin-photographer.vercel.app/",
         github:"https://github.com/LeonelDenett/Charles-Cantin-Photographer",
-        lg: 4,
+        lg: 5,
         md: 6
     },
     {
         id:"2",
         title:"Andréa Pot",
-        description:"Nouvelle ostéopathe au Cabinet Médical de la Baie à Plounéour-Trez",
+        description:"New osteopath at Cabinet Médical de la Baie in Plounéour-Trez",
         functionalities: "Andrea Pot Osteopath's website is a standout for its responsive, intuitive, and user-friendly design, allowing visitors to conveniently schedule appointments through Doctolib, make direct calls, and access the office location via a dedicated button that integrates with Google Maps.",
         tools:"NextJs, Mui, Framer Motion, Vercel",
         imgCard:osteopathe,
         altCard:"Osteopathe",
         link:"https://andrea-pot-osteopathe.vercel.app/",
         github:"https://github.com/LeonelDenett/andrea-pot-osteopathe",
-        lg: 8,
+        lg: 7,
         md: 6
     },
     {
@@ -56,7 +56,7 @@ export const projectData: Project[] = [
         altCard:"BBQ Recipes",
         link:"https://andrea-pot-osteopathe.vercel.app/",
         github:"https://github.com/LeonelDenett/andrea-pot-osteopathe",
-        lg: 8,
+        lg: 7,
         md: 6
     },
     {
@@ -69,7 +69,7 @@ export const projectData: Project[] = [
         altCard:"Cod Counter",
         link:"https://virgo-anotador-pro.vercel.app/",
         github:"https://github.com/LeonelDenett/virgo-anotador-pro",
-        lg: 4,
+        lg: 5,
         md: 6
     },
 ]

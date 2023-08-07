@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    cursor: pointer;
 }
 .cardContainer {
     display: flex;
@@ -15,7 +14,6 @@
     height: 22rem;
     width: 100%;
     border-radius: 1rem;
-    cursor: pointer;
 }
 .infoContainer {
     display: flex;
@@ -27,7 +25,6 @@
     width: 100%;
     border-radius: 1rem;
     border: solid 2px #eeeeee;
-    cursor: pointer;
     overflow: hidden;
 }
 .imageContainer {
@@ -49,11 +46,18 @@
     background-color: #0b1c27e1;
     transition: all .75s;
 }
+.cardContainer:hover .titleContainer {
+    transition: all .3s;
+    scale: 1.05;
+    background-color: aqua;
+}
 .cardContainer:hover .title {
     scale: 1.05;
     transition: all .3s;
     background: linear-gradient(to top, #F66B0E,#FB8B35);
     color: #eeeeee;
+    border: 2px solid #eeeeee;
+    cursor: pointer;
 }
 .cardContent {
     z-index: 2;
@@ -93,12 +97,17 @@
     align-items: center;
 }
 .buttons {
-    min-width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 7rem;
     background: linear-gradient(to top, #F66B0E,#FB8B35);
     color: #eeeeee;
     border: solid 2px #eeeeee;
     border-radius: .5rem;
     z-index: 2;
+    height: 3rem;
 }
 @media (min-width: 900px) and (max-width: 1251px) {
     .cardContent {

@@ -37,7 +37,7 @@ export default function Home() {
             <Box className={styles.container} id="Home">
                 {/* Presentation */}
                 <Box className={styles.presentation}>
-                    <Typography color="primary" className={styles.presentationText}>Welcome, i&apos;m</Typography>
+                    <Typography color="primary" className={styles.presentationText}>Welcome, I&apos;m</Typography>
                     <Typography component="h1" variant="h1" className={styles.name}>Leonel Denett</Typography>
                     <Typography component="h2" color="primary" className={styles.presentationText}>Full stack Developer</Typography>
                 </Box>
@@ -56,8 +56,8 @@ export default function Home() {
                         Fusing full-stack development with UI/UX design, I create responsive apps with intuitive interfaces and captivating experiences.
                         </Typography>
                         <Box className={styles.descriptionButtonContainer} component={motion.div} whileHover={{scale: 1.05}} onClick={() => smoothScroll("Contact")}>
-                            <Paper elevation={5} sx={{borderRadius: "1rem"}}>
-                                <Button variant="contained" color="primary" className={styles.descriptionButton}>Contact me</Button>
+                            <Paper elevation={5} sx={{borderRadius: "1rem", color:"#eeeeee"}}>
+                                <Button variant="contained" className={styles.descriptionButton}>Contact me</Button>
                             </Paper>
                         </Box>
                     </Box>

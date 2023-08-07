@@ -37,7 +37,7 @@ const initialValues: FormData = {
 
 function About() {
     const theme = useTheme();
-    const isPhone = useMediaQuery(theme.breakpoints.between('xs', 'md'));
+    const isPhone = useMediaQuery(theme.breakpoints.between('xs', 'lg'));
   
     const [emailSent, setEmailSent] = useState<boolean>(false);
     const formSpreeURL = 'https://formspree.io/f/xwkdvwgz';
@@ -79,120 +79,135 @@ function About() {
             <Grid container className={styles.container} columnGap={5}>
                 {/* Presentation */}
                 <Grid item lg={isPhone? 12 : 6}>
-                <Box className={styles.presentationContainer}>
-                    <Box className={styles.presentation} component={Paper} elevation={5}>
-                        <Typography className={styles.presentationText} color="primary">
-                            My name is <Typography variant="caption" className={styles.name}>Leonel Denett.</Typography><br/>
-                            I&apos;m a full stack developer from Argentine based in France.<br/><br/>
-                            I usually work with React, NextJs and Firebase.
-                        </Typography>
-                    </Box>
-                    <Box className={styles.resumeContainer}>
-                        <Box component={Paper} elevation={5} className={styles.resumeButtonContainer}>
-                            <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
+                    <Box className={styles.presentationContainer}>
+                        <Paper className={styles.presentation} sx={{borderRadius:"1rem", backgroundColor:"#0b1c27"}} elevation={5}>
+                            <Typography className={styles.presentationText} color="primary">
+                                My name is <Typography variant="caption" className={styles.name}>Leonel Denett.</Typography><br/>
+                                I&apos;m a full stack developer from Argentine based in France.<br/><br/>
+                                I usually work with React, NextJs and Firebase.
+                            </Typography>
+                        </Paper>
+                        {/* Resume CV */}
+                        <Box className={styles.resumeContainer}>
+                            <Paper sx={{borderRadius:"1rem"}} elevation={5} className={styles.resumeButtonContainer}>
+                                <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
+                            </Paper>
                         </Box>
                     </Box>
-                </Box>
-                {/* Contact */}
-                <Box className={styles.contact}>
-                    <Box className={styles.contactContainer}>
-                        {/* Title */}
-                        <Typography variant="subtitle1" className={styles.contactTitle} color="primary" fontWeight={"bolder"}>CONTACT</Typography>
-                        {/* Form */}
-                        <Formik
-                            initialValues={initialValues}
-                            validationSchema={Yup.object({
-                                name: Yup.string().required('Required'),
-                                email: Yup.string().email('Invalid email').required('Required'),
-                                message: Yup.string().required('Required'),
-                            })}
-                            onSubmit={handleFormSubmit}>
-                            <Form>
-                                <Box className={styles.form} component={Paper} elevation={5}>
-                                    <Field
-                                        name="_subject"
-                                        type="hidden"
-                                        value="New portfolio contact"
-                                    />
-                                    <Field
-                                        name="name"
-                                        type="text"
-                                        as={TextField} // Render the TextField component
-                                        label="Name"
-                                        fullWidth
-                                        size="small"
-                                        variant="filled"
-                                        color="secondary"
-                                        sx={{ backgroundColor: "#eeeeee", borderRadius: "0.625rem" }}
-                                        InputProps={{
-                                            disableUnderline: true,
-                                        }}
-                                        InputLabelProps={{ style: { color: "#0b1c27" } }}
-                                    />
-                                    <ErrorMessage className={styles.error} name="name" component="div" />
+                    {/* More info about me */}
+                    {isPhone&&
+                        <Grid item lg={5} mt={4}>
+                            <Paper elevation={5} sx={{borderRadius:"1rem", maxWidth:"30rem"}}>
+                                <SwiperCarousel/>
+                            </Paper>
+                        </Grid>
+                    }
+                    {/* Contact */}
+                    <Box className={styles.contact}>
+                        <Box className={styles.contactContainer}>
+                            {/* Title */}
+                            <Typography variant="subtitle1" className={styles.contactTitle} color="primary" fontWeight={"bolder"}>CONTACT</Typography>
+                            {/* Form */}
+                            <Formik
+                                initialValues={initialValues}
+                                validationSchema={Yup.object({
+                                    name: Yup.string().required('Required'),
+                                    email: Yup.string().email('Invalid email').required('Required'),
+                                    message: Yup.string().required('Required'),
+                                })}
+                                onSubmit={handleFormSubmit}>
+                                <Form>
+                                    <Paper sx={{borderRadius:"1rem", backgroundColor:"#0b1c27"}} elevation={5}>
+                                        <Box className={styles.form}>
+                                                <Field
+                                                    name="_subject"
+                                                    type="hidden"
+                                                    value="New portfolio contact"
+                                                />
+                                                <Field
+                                                    name="name"
+                                                    type="text"
+                                                    as={TextField} // Render the TextField component
+                                                    label="Name"
+                                                    fullWidth
+                                                    size="small"
+                                                    variant="filled"
+                                                    color="secondary"
+                                                    sx={{ backgroundColor: "#eeeeee", borderRadius: "0.625rem" }}
+                                                    InputProps={{
+                                                        disableUnderline: true,
+                                                    }}
+                                                    InputLabelProps={{ style: { color: "#0b1c27", borderRadius: "0.625rem" } }}
+                                                />
+                                                <ErrorMessage className={styles.error} name="name" component="div" />
 
-                                    <Field
-                                        name="email"
-                                        type="email"
-                                        as={TextField} // Render the TextField component
-                                        label="Email"
-                                        noValidate
-                                        fullWidth
-                                        size="small"
-                                        variant="filled"
-                                        color="secondary"
-                                        sx={{ backgroundColor: "#eeeeee", borderRadius: "0.625rem" }}
-                                        InputProps={{
-                                            disableUnderline: true,
-                                        }}
-                                        inputProps={{ autoComplete: 'new-password' }}
-                                        InputLabelProps={{ style: { color: "#0b1c27" } }}
-                                    />
-                                    <ErrorMessage className={styles.error} name="email" component="div" />
+                                                <Field
+                                                    name="email"
+                                                    type="email"
+                                                    as={TextField} // Render the TextField component
+                                                    label="Email"
+                                                    noValidate
+                                                    fullWidth
+                                                    size="small"
+                                                    variant="filled"
+                                                    color="secondary"
+                                                    sx={{ backgroundColor: "#eeeeee", borderRadius: "0.625rem" }}
+                                                    InputProps={{
+                                                        disableUnderline: true,
+                                                    }}
+                                                    inputProps={{ autoComplete: 'new-password' }}
+                                                    InputLabelProps={{ style: { color: "#0b1c27" } }}
+                                                />
+                                                <ErrorMessage className={styles.error} name="email" component="div" />
 
-                                    <Field
-                                        name="message"
-                                        as={TextField}
-                                        label="Message"
-                                        fullWidth
-                                        multiline
-                                        rows={4}
-                                        variant="filled"
-                                        color="secondary"
-                                        sx={{
-                                            backgroundColor: "#eeeeee",
-                                            borderRadius: "0.625rem",
-                                            '&::selection': {
-                                                color: 'red',
-                                                backgroundColor: "red",
-                                            }
-                                        }}
-                                        InputProps={{
-                                            disableUnderline: true,
-                                        }}
-                                        InputLabelProps={{ style: { color: "#0b1c27" } }}
-                                    />
-                                    <ErrorMessage className={styles.error} name="message" component="div" />
-                                </Box>
-                                <Box component={Paper} elevation={5} className={styles.sendResumeButton}>
-                                    <Button
-                                        type="submit"
-                                        component={motion.button}
-                                        whileHover={{scale: 1.05}}
-                                        className={` ${styles.send} ${isFormValidating ? styles.invalid : '' }`}
-                                        disabled={isFormValidating}
-                                    >
-                                        Send
-                                    </Button>
-                                </Box>
-                            </Form>
-                        </Formik>
+                                                <Field
+                                                    name="message"
+                                                    as={TextField}
+                                                    label="Message"
+                                                    fullWidth
+                                                    multiline
+                                                    rows={4}
+                                                    variant="filled"
+                                                    color="secondary"
+                                                    sx={{
+                                                        backgroundColor: "#eeeeee",
+                                                        borderRadius: "0.625rem",
+                                                        '&::selection': {
+                                                            color: 'red',
+                                                            backgroundColor: "red",
+                                                        }
+                                                    }}
+                                                    InputProps={{
+                                                        disableUnderline: true,
+                                                    }}
+                                                    InputLabelProps={{ style: { color: "#0b1c27" } }}
+                                                />
+                                                <ErrorMessage className={styles.error} name="message" component="div" />
+                                            
+                                        </Box>
+                                    </Paper>
+                                    {/* Submit Button */}
+                                    <Box className={styles.sendResumeButton} component={motion.div} whileHover={{scale: 1.05}}>
+                                        <Paper sx={{borderRadius:".5rem", border:"solid 2px #eeeeee"}} elevation={5}>
+                                            <Button
+                                                type="submit"
+                                                className={` ${styles.send} ${isFormValidating ? styles.invalid : '' }`}
+                                                disabled={isFormValidating}
+                                            >
+                                                Send
+                                            </Button>
+                                        </Paper>
+                                    </Box>
+                                </Form>
+                            </Formik>
+                        </Box>
                     </Box>
-                </Box>
                 </Grid>
                 {!isPhone&&
                     <Grid item lg={5}>
-                        <SwiperCarousel/>
+                        <Paper elevation={5} sx={{borderRadius:"1rem", maxWidth:"30rem"}}>
+                            <SwiperCarousel/>
+                        </Paper>
                     </Grid>
                 }
             </Grid>

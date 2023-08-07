@@ -17,14 +17,15 @@ import 'swiper/css/pagination';
 
 function SwiperCarousel() {
     return (
-        <Paper elevation={4} className={styles.container}>
-           <Swiper
+        <Box className={styles.container}>
+            <Box className={styles.swiperContainer}>
+            <Swiper
                 className={styles.swiper}
                 modules={[Pagination,EffectFade]}
                 pagination={{clickable: true}}
                 direction='vertical'
                 slidesPerView={1}
-                >
+            >
                 <SwiperSlide className={styles.slides1}>
                     <Box sx={{textAlign:"center", height:"100%", padding:"1rem", display:"flex", justifyContent:"center", alignItems:"center"}}>
                         <Typography color={"#eeeeee"} variant="body2" fontSize={"1.03rem"}>
@@ -42,8 +43,12 @@ function SwiperCarousel() {
                         </Typography>
                     </Box>
                 </SwiperSlide>
+                <SwiperSlide className={styles.slides2}>
+                    <h1>Hola</h1>
+                </SwiperSlide>
             </Swiper>
-        </Paper>
+            </Box>
+        </Box>
     );
 }
 

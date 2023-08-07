@@ -25,6 +25,15 @@
     color: #0b1c27;
     background-color: #eeeeee;
 }
+@media (max-width: 1200px) {
+    .header {
+        height: 6rem;
+    }
+    .titleContainer {
+        position: absolute;
+        top: 3.5rem;
+    }
+}
 
 @media (min-width: 1200px) {
     .header {
