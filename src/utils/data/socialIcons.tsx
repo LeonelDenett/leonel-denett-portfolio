@@ -8,17 +8,17 @@ import EmailIcon from '@mui/icons-material/Email';
 export const socialIcons = [
     {
         id: 1,
-        icon: <LinkedInIcon className={styles.icon} />,
+        icon: <LinkedInIcon className={styles.icon} sx={{width: {lg:"2rem", xl:"2.5rem"}, height: {lg:"2rem", xl:"2.5rem"}, color: "#eeeeee" }} />,
         link: 'https://www.linkedin.com/in/leonel-denett',
     },
     {
         id: 2,
-        icon: <EmailIcon className={styles.icon} />,
+        icon: <EmailIcon className={styles.icon} sx={{width: {lg:"2rem", xl:"2.5rem"}, height: {lg:"2rem", xl:"2.5rem"}, color: "#eeeeee" }} />,
         link: 'mailto: leonel.denett.dev@hotmail.com',
     },
     {
         id: 3,
-        icon: <GitHubIcon className={styles.icon} />,
-        link: 'https://github.com/LeonelDenett',
+        icon: <GitHubIcon className={styles.icon} sx={{width: {lg:"2rem", xl:"2.5rem"}, height: {lg:"2rem", xl:"2.5rem"}, color: "#eeeeee" }} />,
+        link: 'https://github.com/LeonelDenett?tab=repositories',
     },
 ];

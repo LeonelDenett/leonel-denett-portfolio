@@ -19,7 +19,7 @@ function Menu() {
 
     return (
         <Box>
-            <Paper className={styles.menu} sx={{borderRadius:"1rem"}} elevation={5}>
+            <Paper className={styles.menu} sx={{borderRadius:"1rem", backgroundColor: "#0b1c27"}} elevation={5}>
                 {MenuData.map((item) => (
                     <Box key={item.id} className={styles.menuContainer} onClick={() => smoothScroll(item.title)}>
                         <Typography variant="body2" className={styles.menuItem}>{item.title}</Typography>

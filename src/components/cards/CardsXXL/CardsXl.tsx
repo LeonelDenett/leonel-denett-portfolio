@@ -24,13 +24,13 @@ interface CardProps {
 function CardsXl({project, openModal}: CardProps) {
     return (
         <Box>
-            <Box component={Paper} elevation={4} sx={{borderRadius:"1rem"}} className={styles.cardContainer}>
+            <Paper elevation={4} sx={{borderRadius:"1rem"}} className={styles.cardContainer}>
                 <Box className={styles.infoContainer}>
                     <Box className={styles.imageContainer}>
                         <Image src={project.imgCard} alt={project.altCard} className={styles.photo} />
                     </Box>
                     <Box className={styles.cardContent}>
-                        <Paper elevation={5} sx={{borderRadius:"1rem"}} className={styles.title} onClick={() => openModal(project)}>
+                        <Paper elevation={5} sx={{borderRadius:"1rem", transition: "all .3s"}} className={styles.title} onClick={() => openModal(project)}>
                             <Typography>{project.title}</Typography>
                         </Paper>
                     </Box>
@@ -48,7 +48,7 @@ function CardsXl({project, openModal}: CardProps) {
                         </Link>
                     </Button>
                 </Box>
-            </Box>
+            </Paper>
         </Box>
     );
 }
