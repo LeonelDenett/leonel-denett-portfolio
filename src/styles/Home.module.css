@@ -51,7 +51,6 @@
   max-width: 30rem;
   background-color: #eeeeee;
   box-sizing: border-box;
-  border-radius: 2rem;
 }
 .profilePhoto {
   width: auto;
@@ -77,7 +76,6 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 30rem;
-  border-radius: 1rem;
   padding: 1rem;
   padding-bottom: 2rem;
   text-align: center;

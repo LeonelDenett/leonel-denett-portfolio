@@ -42,7 +42,7 @@
     border-radius: 1rem;
 }
 .cardContainer:hover .imageContainer {
-    transform: scale(1.2); /* Añade esta regla */
+    transform: scale(1.2);
     transition: all .5s;
 }
 .cardContainer:hover .cardContent {

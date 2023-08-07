@@ -42,22 +42,23 @@ export default function Home() {
                     <Typography component="h2" color="primary" className={styles.presentationText}>Full stack Developer</Typography>
                 </Box>
                 {/* Photo */}
-                <Box className={styles.photoContainer} >
-                    <Box className={styles.photo} component={Paper} elevation={5}>
+                <Box className={styles.photoContainer}>
+                    <Paper className={styles.photo} elevation={5} sx={{borderRadius:"2rem"}}>
                         <Image alt={"profile photo"} className={styles.profilePhoto} priority fill src={profilePhoto} />
-                    </Box>
+                    </Paper>
                     <SocialIcons />
                 </Box>
                 {/* Description */}
                 <Box className={styles.description}>
-                    <Paper className={styles.descriptionContainer} elevation={5}>
+                    <Paper className={styles.descriptionContainer} sx={{borderRadius: "1rem"}} elevation={5}>
                         <Typography color="primary" className={styles.descriptionText}>
                         Fusing full-stack development with UI/UX design, I create responsive apps with intuitive interfaces and captivating experiences.
                         </Typography>
-                        {/* <Typography color="primary" className={styles.descriptionText}>Also UX/UI designer.</Typography> */}
-                        <Paper onClick={() => smoothScroll("Contact")} component={motion.div} whileHover={{scale: 1.05}} elevation={5} className={styles.descriptionButtonContainer}>
-                            <Button variant="contained" className={styles.descriptionButton}>Contact me</Button>
-                        </Paper>
+                        <Box component={motion.div} whileHover={{scale: 1.05}} className={styles.descriptionButtonContainer}>
+                            <Paper onClick={() => smoothScroll("Contact")}  elevation={5} sx={{borderRadius: "1rem"}}>
+                                <Button variant="contained" className={styles.descriptionButton}>Contact me</Button>
+                            </Paper>
+                        </Box>
                     </Paper>
                 </Box>
             </Box>
