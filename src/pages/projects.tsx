@@ -58,7 +58,7 @@ function Projects() {
                     </AnimatePresence>
                 </Box>
                 :
-                <Box sx={{position:"relative", width:"100%", marginLeft: {lg:"5rem", xl:"14.75rem"}, marginRight:{lg:"1.5rem", xl:"17.5rem"}, marginBottom:"1.5rem"}}>
+                <Box sx={{position:"relative", width:"100%", marginLeft: {lg:"5rem", xl:"14.75rem"}, marginRight:{lg:"1.5rem", xl:"17.5rem"}, paddingBottom:"1rem"}}>
                     <Grid container spacing={3}>
                         {projectData.map((project) => (
                             <Grid item md={project.md} lg={project.lg} key={project.id}>

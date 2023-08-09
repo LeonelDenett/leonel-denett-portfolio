@@ -5,7 +5,8 @@
 .container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 3rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
     background-color: #112B3C;
     position: relative;
     display: flex;
