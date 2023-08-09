@@ -38,10 +38,6 @@
     background-color: #eeeeee;
     color: #0b1c27;
 }
-.presentationText {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
 .name {
     background: linear-gradient(to top, #F66B0E, #FB8B35);
     -webkit-background-clip: text;

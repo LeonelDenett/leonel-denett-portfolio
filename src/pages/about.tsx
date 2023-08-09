@@ -120,7 +120,7 @@ function About() {
                     <Box className={styles.contact}>
                         <Box className={styles.contactContainer}>
                             {/* Title */}
-                            <Typography variant="h6" className={styles.contactTitle} color="primary" fontWeight={"bolder"}>Contact</Typography>
+                            <Typography style={{fontSize:"2rem", height:"40px", lineHeight:"2rem"}} color="primary" fontWeight={"bolder"}>Contact</Typography>
                             {/* Form */}
                             <Formik
                                 initialValues={initialValues}
