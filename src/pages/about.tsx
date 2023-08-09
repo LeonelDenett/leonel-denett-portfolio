@@ -94,7 +94,7 @@ function About() {
                     <Box className={styles.presentationContainer}>
                         <Paper className={styles.presentation} sx={{borderRadius:"1rem", backgroundColor:"#0b1c27"}} elevation={5}>
                             <Typography className={styles.presentationText} color="primary">
-                                My name is <Typography variant="caption" className={styles.name}>Leonel Denett.</Typography><br/>
+                                My name is <span className={styles.name}>Leonel Denett.</span><br/>
                                 I&apos;m a full stack developer from Argentine based in France.<br/><br/>
                                 I usually work with React, NextJs and Firebase.
                             </Typography>
@@ -102,7 +102,7 @@ function About() {
                         {/* Resume CV */}
                         <Box className={styles.resumeContainer}>
                             <a href="/CV-Leonel-Denett.pdf" download="CV-Leonel-Denett.pdf">
-                            <Paper sx={{borderRadius:"1rem"}} elevation={5} className={styles.resumeButtonContainer}>
+                            <Paper sx={{borderRadius:"1rem", maxWidth:"1.5rem", border:"2px solid #eeeeee"}} elevation={5} className={styles.resumeButtonContainer}>
                                 <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
                             </Paper>
                             </a>
@@ -120,7 +120,7 @@ function About() {
                     <Box className={styles.contact}>
                         <Box className={styles.contactContainer}>
                             {/* Title */}
-                            <Typography variant="subtitle1" className={styles.contactTitle} color="primary" fontWeight={"bolder"}>CONTACT</Typography>
+                            <Typography variant="h6" className={styles.contactTitle} color="primary" fontWeight={"bolder"}>Contact</Typography>
                             {/* Form */}
                             <Formik
                                 initialValues={initialValues}

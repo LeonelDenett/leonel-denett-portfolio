@@ -1,13 +1,13 @@
 // Next
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 // Profile Image
 import profilePhoto from "../images/profile.jpeg";
 // Mui Components
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper'
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
 // Components
 import SocialIcons from '@/components/socialIcons/SocialIcons';
 import { MetaData } from '@/components/head/Head';
@@ -15,11 +15,8 @@ import { MetaData } from '@/components/head/Head';
 import { motion } from "framer-motion";
 // Components
 import Projects from './projects';
-import { Button } from '@mui/material';
 import About from './about';
 
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
     // Smooth Scroll

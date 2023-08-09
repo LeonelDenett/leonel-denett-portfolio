@@ -14,6 +14,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { motion } from "framer-motion"
 // Data
 import { Project } from '@/utils/data/cards';
+import CardsButton from '../CardsButton/CardsButton';
 
 // Props
 interface CardProps {
@@ -36,18 +37,7 @@ function CardsXl({project, openModal}: CardProps) {
                     </Box>
                 </Box>
                 {/* Buttons */}
-                <Box className={styles.cardButtons}>
-                    <Button className={styles.buttons} variant="contained">
-                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
-                    </Button>
-                    <Button className={styles.buttons} variant="contained">
-                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.github}>
-                            <IconButton color="primary" size='small'>
-                                <GitHubIcon fontSize='medium' />
-                            </IconButton>
-                        </Link>
-                    </Button>
-                </Box>
+                <CardsButton project={project} />
             </Paper>
         </Box>
     );

@@ -64,6 +64,7 @@
     right: -1.1rem;
     border-radius: 1rem;
     background-color: #F66B0E;
+    border: solid 0.125rem #eeeeee;
 }
 .resume {
     min-width: 2.5rem;
@@ -72,7 +73,6 @@
     height: 12rem;
     max-width: 1.5rem;
     background: linear-gradient(to top, #F66B0E,#FB8B35);
-    border: solid 0.125rem #eeeeee;
     border-radius: 1rem;
 }
 .contact {

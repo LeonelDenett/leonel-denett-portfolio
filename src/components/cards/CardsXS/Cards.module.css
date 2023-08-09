@@ -8,11 +8,8 @@
     text-align: center;
 }
 .card {
-    border-radius: 1rem;
-    background-color: #0b1c27;
     border: solid 2px #eeeeee;
     position: relative;
-    overflow: visible;
     max-height: 35.125rem;
     width: 100%;
     max-width: 30rem;
@@ -59,38 +56,12 @@
     height: 2.5rem;
     width: 2.5rem;
 }
-.cardButtons {
-    position: absolute;
-    top: 10%;
-    right: -1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: space-between;
-    align-items: center;
-}
 .buttons {
     min-width: 7rem;
     background: linear-gradient(to top, #F66B0E,#FB8B35);
-    color: #eeeeee;
     border: solid 2px #eeeeee;
     border-radius: .5rem;
     z-index: 2;
-}
-.buttonSeeMore {
-    margin-top: 1rem;
-}
-.disabled {
-    min-width: 7rem;
-    color: #eeeeee;
-    border: solid 2px #eeeeee;
-    border-radius: .5rem;
-    z-index: 2;
-    background-color: #0b1c27;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .5rem;
 }
 
 @media (min-width: 1200px) {

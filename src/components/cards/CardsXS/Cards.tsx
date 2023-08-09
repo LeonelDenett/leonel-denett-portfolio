@@ -21,6 +21,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { Project } from '@/utils/data/cards';
 // Framer
 import { motion } from 'framer-motion';
+import CardsButton from '../CardsButton/CardsButton';
 
 
 // Props
@@ -37,7 +38,7 @@ function Cards({project, openModal}: CardProps) {
     return (
         <Box key={project.id}>
             <Box className={styles.cardContainer}>
-                <Card elevation={4} className={styles.card}>
+                <Card sx={{borderRadius:"1rem", backgroundColor: "#0b1c27", overflow:"visible"}} elevation={4} className={styles.card}>
                     <CardActionArea sx={{borderRadius:"1rem"}}>
                         <CardMedia className={styles.cardMedia}>
                             <Box className={styles.photoContainer}>
@@ -48,30 +49,11 @@ function Cards({project, openModal}: CardProps) {
                             <Box>
                                 <Typography color="primary" variant="body1" fontSize={"2rem"}>{project.title}</Typography>
                                 <Typography color="primary" variant='body1' sx={{marginTop:".5rem"}}>{project.description}</Typography>
-                                <Button variant="contained" className={`${styles.buttons} ${styles.buttonSeeMore}`} onClick={() => openModal(project)}>
+                                <Button variant="contained" sx={{color: "#eeeeee", marginTop:"1rem", borderRadius:".5rem", border:"solid 2px #eeeeee"}} className={styles.buttons} onClick={() => openModal(project)}>
                                     See more
                                 </Button>
                             </Box>
-                            <Box className={styles.cardButtons}>
-                                {
-                                    project.id !== 3 ?
-                                    <>
-                                    <Button className={styles.buttons} variant="contained">
-                                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
-                                    </Button>
-                                    <Button className={styles.buttons} variant="contained">
-                                        <Link style={{textDecoration:"none", color:"#eeeeee", display:"flex", alignItems:"center"}} href={project.github}>
-                                            <GitHubIcon/>
-                                        </Link>
-                                    </Button>
-                                    </>
-                                    :
-                                    <Box className={styles.disabled}>
-                                        <Typography>Maintenance</Typography>
-                                        <SettingsIcon component={motion.svg} animate={{rotate:360,transition:{duration:2, repeat:Infinity, ease:'linear'}}} fontSize="large" className={styles.icon}/>
-                                    </Box>
-                                }
-                            </Box>
+                            <CardsButton project={project}/>
                         </CardContent>
                     </CardActionArea>
                 </Card>
