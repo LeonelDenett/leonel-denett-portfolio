@@ -1,4 +1,5 @@
 // NextJs
+import Link from "next/link";
 import { useState } from "react";
 // Styles
 import styles from "../styles/About.module.css";
@@ -19,7 +20,6 @@ import { motion } from 'framer-motion';
 // Mailer
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-
 
 interface FormData {
     name: string;
@@ -71,6 +71,18 @@ function About() {
         }
     };
 
+    
+    const cvUrl = '/utils/cv/CV-Leonel-Denett.pdf'; // Ajusta la ruta a tu archivo CV
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        link.download = 'CV-Leonel-Denett.pdf'; // Nombre del archivo para la descarga
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
 
     return (
         <Box className={styles.aboutPage}>
@@ -89,9 +101,11 @@ function About() {
                         </Paper>
                         {/* Resume CV */}
                         <Box className={styles.resumeContainer}>
+                            <a href="/CV-Leonel-Denett.pdf" download="CV-Leonel-Denett.pdf">
                             <Paper sx={{borderRadius:"1rem"}} elevation={5} className={styles.resumeButtonContainer}>
                                 <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
                             </Paper>
+                            </a>
                         </Box>
                     </Box>
                     {/* More info about me */}

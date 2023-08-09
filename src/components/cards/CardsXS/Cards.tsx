@@ -5,26 +5,23 @@ import Link from 'next/link';
 import styles from './Cards.module.css';
 // Mui Components
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
+// Mui Icons
+import SettingsIcon from '@mui/icons-material/Settings';
 import GitHubIcon from '@mui/icons-material/GitHub';
 // Mui Styles
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 // Data
-import { Project, projectData } from '@/utils/data/cards';
-import { isJSDocProtectedTag } from 'typescript';
-// Cards
-import photographer from "../../../images/photographer.jpg";
-import osteopathe from "../../../images/andrea-ostheopahte.jpeg";
-import fire from "../../../images/bbq.jpg";
-import geek from "../../../images/counter-kills.jpeg";
+import { Project } from '@/utils/data/cards';
+// Framer
+import { motion } from 'framer-motion';
+
 
 // Props
 interface CardProps {
@@ -36,6 +33,7 @@ function Cards({project, openModal}: CardProps) {
     // Querys
     const theme = useTheme();
     const isPhone = useMediaQuery(theme.breakpoints.between('xs', 'md'));
+
     return (
         <Box key={project.id}>
             <Box className={styles.cardContainer}>
@@ -55,14 +53,24 @@ function Cards({project, openModal}: CardProps) {
                                 </Button>
                             </Box>
                             <Box className={styles.cardButtons}>
-                                <Button className={styles.buttons} variant="contained">
-                                    <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
-                                </Button>
-                                <Button className={styles.buttons} variant="contained">
-                                    <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.github}>
-                                        <GitHubIcon/>
-                                    </Link>
-                                </Button>
+                                {
+                                    project.id !== 3 ?
+                                    <>
+                                    <Button className={styles.buttons} variant="contained">
+                                        <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
+                                    </Button>
+                                    <Button className={styles.buttons} variant="contained">
+                                        <Link style={{textDecoration:"none", color:"#eeeeee", display:"flex", alignItems:"center"}} href={project.github}>
+                                            <GitHubIcon/>
+                                        </Link>
+                                    </Button>
+                                    </>
+                                    :
+                                    <Box className={styles.disabled}>
+                                        <Typography>Maintenance</Typography>
+                                        <SettingsIcon component={motion.svg} animate={{rotate:360,transition:{duration:2, repeat:Infinity, ease:'linear'}}} fontSize="large" className={styles.icon}/>
+                                    </Box>
+                                }
                             </Box>
                         </CardContent>
                     </CardActionArea>

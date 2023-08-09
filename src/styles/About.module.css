@@ -61,7 +61,7 @@
 .resumeButtonContainer {
     position: absolute;
     bottom: -6rem;
-    right: -1rem;
+    right: -1.1rem;
     border-radius: 1rem;
     background-color: #F66B0E;
 }

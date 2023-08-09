@@ -28,24 +28,21 @@ function SwiperCarousel() {
             >
                 <SwiperSlide className={styles.slides1}>
                     <Box sx={{textAlign:"center", height:"100%", padding:"1rem", display:"flex", justifyContent:"center", alignItems:"center"}}>
-                        <Typography color={"#eeeeee"} variant="body2" fontSize={"1.03rem"}>
-                            I am a 2022 graduate from Studi, specializing in full-stack web and mobile development.<br/>
-                            My expertise includes frontend technologies like React, NextJs, and React Native.<br/>
-                            For backend, I possess knowledge of MySQL, MongoDB, although my favorite is Firebase
-                            due to its speed and ease of use.<br/> When developing my own applications,
-                            I often sketch out the main ideas in my notebook. When working for clients
-                            (I recently completed my first freelance project), I prepare comprehensive presentations using Figma.<br/>
-                            I maintain a clean coding style and structure across projects,
-                            utilizing the MuiComponents library for UI and Framer Motion for animations.<br/>
-                            As a self-motivated learner, tools like ChatGPT  are invaluable, especially for
-                            those of us without a mentor or senior developer,
-                            helping us address coding challenges effectively.
+                        <Typography color={"#eeeeee"} variant="body1" fontSize={"1.03rem"}>
+                            I am a 2022 graduate from Studi, specializing in <span style={{color:"#F66B0E"}}>full-stack web and mobile development</span>.<br/>
+                            My expertise includes frontend technologies like <span style={{color:"#F66B0E"}}>React</span>, <span style={{color:"#F66B0E"}}>NextJs</span>, and <span style={{color:"#F66B0E"}}>React Native</span>.<br/>
+                            For backend, I possess knowledge of <span style={{color:"#F66B0E"}}>MySQL</span>,<span style={{color:"#F66B0E"}}>MongoDB</span>, although my favorite is <span style={{color:"#F66B0E"}}>Firebase</span>.<br/>
+                            For the sketches of my projects I use <span style={{color:"#F66B0E"}}>Figma</span>, then if I need some kind of
+                            animation I use <span style={{color:"#F66B0E"}}>Framer-Motion</span>, and my favorite component library is <span style={{color:"#F66B0E"}}>MuiComponents</span><br/>
+                            I continue to learn and study on my own.
+                            With the focus on mobile apps using <span style={{color:"#F66B0E"}}>ReactNative,
+                            Expo, Firebase</span>, and websites with <span style={{color:"#F66B0E"}}>Symphony and NextJs</span>.
                         </Typography>
                     </Box>
                 </SwiperSlide>
-                <SwiperSlide className={styles.slides2}>
+                {/* <SwiperSlide className={styles.slides2}>
                     <h1>Hola</h1>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
             </Box>
         </Box>

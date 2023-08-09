@@ -80,6 +80,18 @@
 .buttonSeeMore {
     margin-top: 1rem;
 }
+.disabled {
+    min-width: 7rem;
+    color: #eeeeee;
+    border: solid 2px #eeeeee;
+    border-radius: .5rem;
+    z-index: 2;
+    background-color: #0b1c27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
 
 @media (min-width: 1200px) {
     .cardContainer {
