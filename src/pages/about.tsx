@@ -101,11 +101,11 @@ function About() {
                         </Paper>
                         {/* Resume CV */}
                         <Box className={styles.resumeContainer}>
-                            <a href="/CV-Leonel-Denett.pdf" download="CV-Leonel-Denett.pdf">
-                            <Paper sx={{borderRadius:"1rem", maxWidth:"1.5rem", border:"2px solid #eeeeee"}} elevation={5} className={styles.resumeButtonContainer}>
+                            <Paper sx={{borderRadius:"1rem"}} elevation={5} className={styles.resumeButtonContainer}>
+                                <a href="/CV-Leonel-Denett.pdf" download="CV-Leonel-Denett.pdf">
                                 <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
+                                </a>
                             </Paper>
-                            </a>
                         </Box>
                     </Box>
                     {/* More info about me */}

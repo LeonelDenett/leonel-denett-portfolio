@@ -85,29 +85,6 @@
     object-position: center;
     border-radius: 1rem;
 }
-.cardButtons {
-    position: absolute;
-    top: 60%;
-    right: -1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    justify-content: space-between;
-    align-items: center;
-}
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    width: 7rem;
-    background: linear-gradient(to top, #F66B0E,#FB8B35);
-    color: #eeeeee;
-    border: solid 2px #eeeeee;
-    border-radius: .5rem;
-    z-index: 2;
-    height: 3rem;
-}
 @media (min-width: 900px) and (max-width: 1251px) {
     .cardContent {
         padding: 0rem;
@@ -116,5 +93,17 @@
 @media (min-width: 1400px) {
     .container {
         min-width: 80rem;
+    }
+    .imageContainer {
+        max-height: 24rem;
+    }
+    .photo {
+        max-height: 24rem;
+    }
+    .cardContainer {
+        height: 24rem;
+    }
+    .infoContainer {
+        height: 24rem;
     }
 }
