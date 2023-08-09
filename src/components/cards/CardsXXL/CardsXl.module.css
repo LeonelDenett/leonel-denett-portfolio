@@ -95,15 +95,15 @@
         min-width: 80rem;
     }
     .imageContainer {
-        max-height: 24rem;
+        max-height: 23rem;
     }
     .photo {
-        max-height: 24rem;
+        max-height: 23rem;
     }
     .cardContainer {
-        height: 24rem;
+        height: 23rem;
     }
     .infoContainer {
-        height: 24rem;
+        height: 23rem;
     }
 }

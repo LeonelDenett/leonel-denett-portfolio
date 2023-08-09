@@ -42,7 +42,6 @@
 
 @media (min-width: 900px) {
     .container {
-        background-color: transparent;
         padding-left: 6rem;
         padding-right: 6rem;
         display: flex;

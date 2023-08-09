@@ -103,7 +103,7 @@ function About() {
                         <Box className={styles.resumeContainer}>
                             <Paper sx={{borderRadius:"1rem"}} elevation={5} className={styles.resumeButtonContainer}>
                                 <a href="/CV-Leonel-Denett.pdf" download="CV-Leonel-Denett.pdf">
-                                <Button component={motion.button} whileHover={{scale: 1.05}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
+                                <Button component={motion.button} whileHover={{scale: 1.05}} sx={{minWidth:"2.5rem", borderRadius:"1rem", border: "solid 0.125rem #eeeeee"}} className={styles.resume}>R<br/>e<br/>s<br/>u<br/>m<br/>e</Button>
                                 </a>
                             </Paper>
                         </Box>
