@@ -23,7 +23,7 @@ function SwiperCarousel() {
                     <Typography color={"#eeeeee"} variant="body1" fontSize={"1.03rem"}>
                         I am a 2022 graduate from Studi, specializing in <span style={{color:"#F66B0E"}}>full-stack web and mobile development</span>.<br/>
                         My expertise includes frontend technologies like <span style={{color:"#F66B0E"}}>React</span>, <span style={{color:"#F66B0E"}}>NextJs</span>, and <span style={{color:"#F66B0E"}}>React Native</span>.<br/>
-                        For backend, I possess knowledge of <span style={{color:"#F66B0E"}}>MySQL</span>,<span style={{color:"#F66B0E"}}>MongoDB</span>, although my favorite is <span style={{color:"#F66B0E"}}>Firebase</span>.<br/>
+                        For backend, I possess knowledge of <span style={{color:"#F66B0E"}}>PostgreSQL</span>, <span style={{color:"#F66B0E"}}>MongoDB</span>, <span style={{color:"#F66B0E"}}>Node</span>, <span style={{color:"#F66B0E"}}>Symfony</span>, although my favorite is <span style={{color:"#F66B0E"}}>Firebase</span>.<br/>
                         For the sketches of my projects I use <span style={{color:"#F66B0E"}}>Figma</span>, then if I need some kind of
                         animation I use <span style={{color:"#F66B0E"}}>Framer-Motion</span>, and my favorite component library is <span style={{color:"#F66B0E"}}>MuiComponents</span><br/>
                         I continue to learn and study on my own.
