@@ -80,7 +80,7 @@ function ModalProjects({ project, closeModal, isOpen }: ModalProps) {
                                         <Typography>Description:</Typography>
                                     </Box>
                                     <Box>
-                                        <Typography>{project.description}</Typography>
+                                        <Typography variant="body2">{project.description}</Typography>
                                     </Box>
                                 </Box>
                                 <Box className={styles.functionalities}>
@@ -88,7 +88,7 @@ function ModalProjects({ project, closeModal, isOpen }: ModalProps) {
                                         <Typography>Functionalities:</Typography>
                                     </Box>
                                     <Box>
-                                        <Typography>{project.functionalities}</Typography>
+                                        <Typography variant="body2">{project.functionalities}</Typography>
                                     </Box>
                                 </Box>
                                 <Box className={styles.tools}>
@@ -96,7 +96,7 @@ function ModalProjects({ project, closeModal, isOpen }: ModalProps) {
                                         <Typography>Tools:</Typography>
                                         </Box>
                                         <Box>
-                                        <Typography>{project.tools}</Typography>
+                                        <Typography variant="body2">{project.tools}</Typography>
                                     </Box>
                                 </Box>
                             </Box>

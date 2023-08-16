@@ -65,7 +65,7 @@ function About() {
                     className: styles.toastifySuccess
                 })
                 toast("I will reply as soon as possible", {
-                    className: styles.toastifySuccess
+                    className: styles.toastifyReply
                 })
             } else {
                 console.error('Error sending email:', response.statusText)

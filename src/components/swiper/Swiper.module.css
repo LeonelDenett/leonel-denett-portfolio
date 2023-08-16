@@ -21,6 +21,8 @@
     height: 43.9rem;
     padding: 0;
     margin: 0;
+    background-color: #112B3C;
+    border-radius: .85rem;
 }
 .swiper {
     border-radius: .85rem;

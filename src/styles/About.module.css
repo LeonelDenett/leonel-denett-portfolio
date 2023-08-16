@@ -42,7 +42,6 @@
     background: linear-gradient(to top, #F66B0E, #FB8B35);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
     line-height: 2rem;
 }
 .name::selection {
@@ -137,11 +136,22 @@
     color: #eeeeee;
     border: solid 2px #eeeeee;
     border-radius: 1rem;
+    display: flex;
+    margin: 1rem;
+    margin-top: 3rem;
+}
+.toastifyReply {
+    background: linear-gradient(to top, #F66B0E,#FB8B35);
+    color: #eeeeee;
+    border: solid 2px #eeeeee;
+    border-radius: 1rem;
+    margin: 1rem;
 }
 .toastifyError {
     color: #0b1c27;
     background-color: #eeeeee;
     border: solid 2px #0b1c27;
+    border-radius: 1rem;
 
 }
 

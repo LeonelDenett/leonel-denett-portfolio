@@ -9,6 +9,7 @@
     align-items: center;
 }
 .buttons {
+    width: 100%;
     min-width: 7rem;
     background: linear-gradient(to top, #F66B0E,#FB8B35);
     border: solid 2px #eeeeee;
