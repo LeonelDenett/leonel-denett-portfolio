@@ -93,7 +93,7 @@ function About() {
                 <Grid item lg={isPhone? 12 : 6}>
                     <Box className={styles.presentationContainer}>
                         <Paper className={styles.presentation} sx={{borderRadius:"1rem", backgroundColor:"#0b1c27"}} elevation={5}>
-                            <Typography variant="h6" sx={{fontSize:"2rem"}} className={styles.presentationText} color="primary">
+                            <Typography variant="h6" className={styles.presentationText} color="primary">
                                 My name is <span className={styles.name}>Leonel Denett.</span><br/>
                                 I&apos;m a full stack developer from Argentine based in France.<br/><br/>
                                 I usually work with React, NextJs and Firebase.

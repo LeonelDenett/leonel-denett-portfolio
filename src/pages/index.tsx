@@ -51,6 +51,7 @@ export default function Home() {
                     <Box className={styles.descriptionContainer} sx={{borderRadius: "1rem"}} >
                         <Typography color="primary" className={styles.descriptionText}>
                         Fusing full-stack development with UI/UX design, I create responsive apps with intuitive interfaces and captivating experiences.
+                        {/* I'm a full-stack developer specialized in Next.js and Firebase, also skilled in crafting my own UX/UI designs.I create responsive apps with intuitive interfaces and captivating experiences. */}
                         </Typography>
                         <Box className={styles.descriptionButtonContainer} component={motion.div} whileHover={{scale: 1.05}} onClick={() => smoothScroll("Contact")}>
                             <Paper elevation={5} sx={{borderRadius: "1rem", color:"#eeeeee"}}>
