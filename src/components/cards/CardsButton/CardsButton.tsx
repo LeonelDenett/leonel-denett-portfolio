@@ -31,10 +31,10 @@ function CardsButton({project} : CardsButtonProps) {
             {
                 project.id !== 3 ?
                 <>
-                <Button className={isPhone? styles.buttons : styles.buttonsXl} sx={{borderRadius:".5rem", border:"solid 2px #eeeeee"}} variant="contained">
+                <Button component={motion.button} whileHover={{scale:1.05, background: "linear-gradient(to bottom, #F66B0E,#FB8B35)"}} className={isPhone? styles.buttons : styles.buttonsXl} sx={{borderRadius:".5rem", border:"solid 2px #eeeeee"}} variant="contained">
                     <Link style={{textDecoration:"none", color:"#eeeeee"}} href={project.link}>Site</Link>
                 </Button>
-                <Button className={isPhone? styles.buttons : styles.buttonsXl} sx={{borderRadius:".5rem", border:"solid 2px #eeeeee"}} variant="contained">
+                <Button component={motion.button} whileHover={{scale:1.05, background: "linear-gradient(to bottom, #F66B0E,#FB8B35)"}} className={isPhone? styles.buttons : styles.buttonsXl} sx={{borderRadius:".5rem", border:"solid 2px #eeeeee"}} variant="contained">
                     <Link style={{textDecoration:"none", color:"#eeeeee", display:"flex", alignItems:"center"}} href={project.github}>
                         <GitHubIcon/>
                     </Link>

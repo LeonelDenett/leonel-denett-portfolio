@@ -15,6 +15,9 @@ import "@fontsource/space-mono";
 import Loading from "./loading";
 import { Box } from "@mui/material";
 import { AnimatePresence } from "framer-motion";
+// React Toastify
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
 
 // Mui Theme
 let theme = createTheme({
@@ -87,6 +90,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     <Loading />
                 :
                 <Box>
+                    <ToastContainer hideProgressBar={true} pauseOnHover autoClose={4000} />
                     <Navbar/>
                     <Component {...pageProps} />
                 </Box>

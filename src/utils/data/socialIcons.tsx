@@ -14,7 +14,7 @@ export const socialIcons = [
     {
         id: 2,
         icon: <EmailIcon className={styles.icon} sx={{width: {lg:"2rem", xl:"2.5rem"}, height: {lg:"2rem", xl:"2.5rem"}, color: "#eeeeee" }} />,
-        link: 'mailto: leonel.denett.dev@hotmail.com',
+        link: 'mailto: leoneldenett24@gmail.com',
     },
     {
         id: 3,

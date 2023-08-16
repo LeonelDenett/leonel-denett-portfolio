@@ -20,6 +20,8 @@ import { motion } from 'framer-motion';
 // Mailer
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+// React Toastify
+import { toast } from "react-toastify";
 
 interface FormData {
     name: string;
@@ -59,9 +61,17 @@ function About() {
             if (response.ok) {
                 actions.resetForm();
                 setEmailSent(true);
-                console.log("email sended")
+                toast("Email sent successfully", {
+                    className: styles.toastifySuccess
+                })
+                toast("I will reply as soon as possible", {
+                    className: styles.toastifySuccess
+                })
             } else {
-                console.error('Error sending email:', response.statusText);
+                console.error('Error sending email:', response.statusText)
+                toast("Error sending email", {
+                    className: styles.toastifyError
+                })
             }
         } catch (error) {
             console.error('Error sending email:', error);
