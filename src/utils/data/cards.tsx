@@ -67,7 +67,7 @@ export const projectData: Project[] = [
         tools:"NextJs, Mui, Framer Motion, Formik, Yup, Firebase, Vercel",
         imgCard:geek,
         altCard:"Cod Counter",
-        link:"https://virgo-anotador-pro.vercel.app/",
+        link:"https://cod-counter.vercel.app/auth/login",
         github:"https://github.com/LeonelDenett/virgo-anotador-pro",
         lg: 5,
         md: 6
