@@ -18,6 +18,7 @@ import { AnimatePresence } from "framer-motion";
 // React Toastify
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from "react-toastify";
+import Footer from "@/components/footer/Footer";
 
 // Mui Theme
 let theme = createTheme({
@@ -93,6 +94,7 @@ export default function App({ Component, pageProps }: AppProps) {
                     <ToastContainer hideProgressBar={true} pauseOnHover autoClose={4000} />
                     <Navbar/>
                     <Component {...pageProps} />
+                    <Footer/>
                 </Box>
             }
             </AnimatePresence>
