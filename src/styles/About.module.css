@@ -3,8 +3,6 @@
     background-color: #112B3C;
 }
 .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     margin-top: 3rem;
     padding-bottom: 1rem;
     background-color: #112B3C;
@@ -152,7 +150,6 @@
     background-color: #eeeeee;
     border: solid 2px #0b1c27;
     border-radius: 1rem;
-
 }
 
 @media (min-width: 500px) {

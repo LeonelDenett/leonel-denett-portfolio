@@ -98,7 +98,7 @@ function About() {
         <Box className={styles.aboutPage}>
             {/* Subtitle */}
             <Subtitle subtitle={"About Me"} id={"Contact"} />
-            <Grid container className={styles.container} columnGap={5}>
+            <Grid container className={styles.container} sx={{paddingInline: {xs:"1.25rem", sm:"1.5rem"}}} columnGap={5}>
                 {/* Presentation */}
                 <Grid item lg={isPhone? 12 : 6}>
                     <Box className={styles.presentationContainer}>
