@@ -48,7 +48,8 @@ function Cards({project, openModal}: CardProps) {
                         <CardContent>
                             <Box>
                                 <Typography color="primary" variant="body1" fontSize={"2rem"}>{project.title}</Typography>
-                                <Typography color="primary" variant='body1' sx={{marginTop:".5rem"}}>{project.description}</Typography>
+                                <Typography color="primary" variant='body1' sx={{marginTop:".5rem",
+}}>{project.description}</Typography>
                                 <Button variant="contained" sx={{color: "#eeeeee", marginTop:"1rem", borderRadius:".5rem", border:"solid 2px #eeeeee"}} className={styles.buttons} onClick={() => openModal(project)}>
                                     See more
                                 </Button>

@@ -23,7 +23,7 @@ export const projectData: Project[] = [
     {
         id:1,
         title:"Charles Cantin",
-        description:"Professional Photographer specialized in capturing the beauty and emotions of weddings, anniversaries, and personalized photo shoots.",
+        description:"Professional Photographer specialized in capturing the beauty and emotions of weddings and personalized photo shoots.",
         functionalities: "This photographer's website impresses with its responsive design and utilizes Firebase database to showcase his portfolio, includes a secure contact form and is deployed by Vercel.",
         tools:"NextJs, Mui, Framer Motion, Firebase, Formik, Yup, Vercel.",
         imgCard:photographer,
