@@ -31,7 +31,7 @@ export default function Home() {
             {/* Metadata */}
             <MetaData/>
             {/* HomePage */}
-            <Box className={styles.container} id="Home" sx={{paddingInline: {xs:"1.25rem", sm:"1.5rem"}}}>
+            <Box className={styles.container} id="Home" sx={{paddingInline: {xs:"1.25rem", sm:"1.5rem"}, boxShadow: {lg:"inset 0 0 1rem black"}}}>
                 {/* Presentation */}
                 <Box className={styles.presentation}>
                     <Typography color="primary" className={styles.presentationText}>Welcome, I&apos;m</Typography>

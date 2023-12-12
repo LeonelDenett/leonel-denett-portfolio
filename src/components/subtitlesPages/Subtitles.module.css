@@ -1,11 +1,10 @@
 .header {
-    height: 4rem;
+    height: 5rem;
     background: linear-gradient(to left, #F66B0E, #FB8B35);
     border-radius: 0 0 1.5rem 1.5rem;
     display: flex;
     justify-content: center;
     border: 2px solid #eeeeee;
-    background-color: #0b1c27;
 }
 .titleContainer {
     position: absolute;

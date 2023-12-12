@@ -44,7 +44,7 @@ function Projects() {
             {/* Subtitle */}
             <Subtitle subtitle={"Projects"} id={"Projects"} />
             {/* Content */}
-            <Box className={styles.container} sx={{paddingInline:{xs:"1.25rem", sm:"1.5rem"}}}>
+            <Box className={styles.container} sx={{paddingInline:{xs:"1.25rem", sm:"1.5rem"}, marginTop:{xs:"1rem", md:"3rem"}}}>
                 {/* Cards */}
                 {isPhone?
                 <Box sx={{position:"relative", width:"100%"}}>

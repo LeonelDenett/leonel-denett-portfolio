@@ -1,6 +1,8 @@
 .projects {
     position: relative;
     background-color: #112B3C;
+    min-height: 100vh;
+
 }
 /* Content */
 .container {
@@ -11,6 +13,9 @@
     display: flex;
     flex-grow: 1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -51,7 +56,6 @@
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-        height: 6rem;
         top: 0;
         left: 0;
         position: relative;
